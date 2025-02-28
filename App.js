@@ -14,10 +14,12 @@ export default function App() {
       <Stack.Navigator
         screenOptions={{ headerTitle: "Restaurants" }}
       >
+        {/* Home screen where users search for restaurants */}
         <Stack.Screen
           name="Search"
           component={SearchScreen}
         />
+        {/* Detail screen displaying information about a specific restaurant */}
         <Stack.Screen
           name="ResultsShow"
           component={ResultsShowScreen}

@@ -33,6 +33,7 @@ export default function ResultsShowScreen({ route }) {
       <Text style={styles.title}>{result.name}</Text>
       <Text style={styles.phone}>{result.phone}</Text>
       <View style={styles.icon}>
+        {/* Show whether the restaurant is closed or open for delivery */}
         {result.is_closed ? (
           <AntDesign
             name="closecircleo"
@@ -47,7 +48,7 @@ export default function ResultsShowScreen({ route }) {
           />
         )}
       </View>
-
+      {/* Display restaurant images */}
       <FlatList
         data={result.photos}
         renderItem={({ item }) => {

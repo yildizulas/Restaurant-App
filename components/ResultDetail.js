@@ -17,6 +17,7 @@ export default function ResultDetail({ result }) {
             : null
         }
       />
+      {/* Display the restaurant name and show the rating and review count */}
       <Text style={styles.name}>{result.name}</Text>
       <Text>
         {result.rating} Yıldızlı Restoran,{" "}

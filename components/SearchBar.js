@@ -14,12 +14,14 @@ export default function SearchBar({
 }) {
   return (
     <View style={styles.backgroundStyle}>
+      {/* Search icon */}
       <AntDesign
         style={styles.iconStyle}
         name="search1"
         size={30}
         color="black"
       />
+      {/* Input field for searching */}
       <TextInput
         style={styles.inputStyle}
         placeholder="Ara"
